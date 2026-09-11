@@ -228,4 +228,6 @@ Suite: profiling & risk scoring, scanner primitives (safe loopback/TEST-NET only
 
 # 📄 Legal
 
-For **authorized security testing and education** on networks you own. Scanning networks without permission is illegal in most jurisdictions (including Pakistan's PECA and the US CFAA). The authors accept no liability for misuse.
+**License:** MIT — see [LICENSE](LICENSE). Copyright (c) 2026 REBEL.
+
+**Use:** For **authorized security testing and education** on networks you own. Scanning networks without permission is illegal in most jurisdictions (including Pakistan's PECA and the US CFAA). The authors accept no liability for misuse.
