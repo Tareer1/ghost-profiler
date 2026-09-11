@@ -1,0 +1,23 @@
+# --- LLM models (large binaries — copy manually or via git-lfs) ---
+models/
+*.gguf
+
+# --- virtualenv (auto-created on first run) ---
+.venv/
+
+# --- generated output ---
+reports/
+scan_log.txt
+*.log
+
+# --- caches ---
+__pycache__/
+.pytest_cache/
+
+# --- non-project material (books/courseware) ---
+Certified Ethical Hacker (CEH) v12/
+*.pdf
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db

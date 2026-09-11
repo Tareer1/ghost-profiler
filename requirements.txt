@@ -1,0 +1,6 @@
+rich>=13.0.0
+requests>=2.31.0
+
+# GhostCore — in-process GGUF LLM engine (no Ollama).
+# NOTE: install inside a venv; on Kali use:  python3 main.py   (auto-bootstraps .venv)
+llama-cpp-python>=0.3.0
