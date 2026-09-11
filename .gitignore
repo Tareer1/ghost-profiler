@@ -10,6 +10,9 @@ reports/
 scan_log.txt
 *.log
 
+# --- portable zips ---
+*.zip
+
 # --- caches ---
 __pycache__/
 .pytest_cache/
