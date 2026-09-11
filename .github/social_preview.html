@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1280px; height: 640px; overflow: hidden;
+         font-family: 'DejaVu Sans Mono', 'Liberation Mono', monospace;
+         background: #07090f; color: #e8f6ff; position: relative; }
+  .grid { position: absolute; inset: 0;
+          background-image: linear-gradient(rgba(0,255,200,.05) 1px, transparent 1px),
+                            linear-gradient(90deg, rgba(0,255,200,.05) 1px, transparent 1px);
+          background-size: 40px 40px; }
+  .glow { position: absolute; width: 600px; height: 600px; border-radius: 50%;
+          background: radial-gradient(circle, rgba(0,255,200,.12) 0%, transparent 65%);
+          top: -200px; right: -150px; }
+  .glow2 { position: absolute; width: 500px; height: 500px; border-radius: 50%;
+           background: radial-gradient(circle, rgba(171,71,255,.10) 0%, transparent 65%);
+           bottom: -180px; left: -120px; }
+  .card { position: absolute; top: 60px; right: 70px; width: 420px;
+          border: 1px solid rgba(0,255,200,.35); background: rgba(10,16,26,.9);
+          padding: 22px 26px; box-shadow: 0 0 40px rgba(0,255,200,.08); }
+  .card h3 { color: #00ffc8; font-size: 20px; letter-spacing: 2px; margin-bottom: 12px; }
+  .card .row { font-size: 15px; color: #9fb8c4; margin: 7px 0; }
+  .card .row b { color: #e8f6ff; }
+  .risk { display: inline-block; width: 180px; height: 10px; background: #14202c;
+          vertical-align: middle; margin-left: 8px; position: relative; }
+  .risk i { position: absolute; inset: 0; width: 33%;
+            background: linear-gradient(90deg,#ffb020,#ff7a00); }
+  .title { position: absolute; top: 130px; left: 70px; }
+  .ghost { font-size: 84px; line-height: 1; }
+  h1 { font-size: 58px; letter-spacing: 6px; color: #00ffc8;
+       text-shadow: 0 0 24px rgba(0,255,200,.45); margin-top: 8px; }
+  .sub { font-size: 20px; color: #9fb8c4; letter-spacing: 2px; margin-top: 14px; }
+  .tags { position: absolute; left: 70px; bottom: 80px; }
+  .tag { display: inline-block; border: 1px solid rgba(0,255,200,.4); color: #00ffc8;
+         padding: 7px 16px; margin-right: 12px; font-size: 15px; letter-spacing: 1px; }
+  .footer { position: absolute; left: 70px; bottom: 36px; font-size: 14px;
+            color: #55707d; letter-spacing: 1px; }
+</style></head>
+<body>
+  <div class="grid"></div><div class="glow"></div><div class="glow2"></div>
+  <div class="title">
+    <div class="ghost">👻</div>
+    <h1>GHOST PROFILER</h1>
+    <div class="sub">ctOS-style network device profiler · built-in local LLM · 100% offline</div>
+  </div>
+  <div class="card">
+    <h3>GATEKEEPER-1</h3>
+    <div class="row">IP&nbsp;&nbsp;&nbsp;192.168.100.1</div>
+    <div class="row">TYPE&nbsp;&nbsp;<b>Router/Gateway</b></div>
+    <div class="row">PORTS&nbsp;&nbsp;<b>23, 53, 80</b></div>
+    <div class="row">RISK&nbsp;&nbsp;<b>MEDIUM 33/100</b><span class="risk"><i></i></span></div>
+  </div>
+  <div class="tags">
+    <span class="tag">KALI LINUX</span><span class="tag">PYTHON 3</span>
+    <span class="tag">GHOSTCORE LLM</span><span class="tag">A–F GRADE</span>
+  </div>
+  <div class="footer">// unauthorized access is a crime — own network only</div>
+</body></html>

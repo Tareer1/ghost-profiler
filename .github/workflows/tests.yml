@@ -1,0 +1,33 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies (light — no llama-cpp build needed)
+        # Tests are LLM-free: llama-cpp-python's compile is skipped on CI by
+        # installing only the runtime deps the suite actually touches.
+        run: |
+          python -m pip install --upgrade pip
+          pip install rich requests pytest
+
+      - name: Run test suite
+        run: python -m pytest -q
